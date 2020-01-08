@@ -1,0 +1,32 @@
+package Investigation.models
+
+/*
+ * Implement the model here
+ */
+
+ entity InvestigationAccelerometer {
+ 	accelerometerValueX : sensor(Beschleunigungssensor, x)
+ 	accelerometerValueY : sensor(Beschleunigungssensor, y)
+ 	accelerometerValueZ : sensor(Beschleunigungssensor, z)
+ }
+ 
+ entity InvestigationCamera {
+ 	accelerometerValueX : file
+ }
+ 
+ entity InvestigationDatabase128 {
+ 	databaseValue128 : string []
+ }
+ 
+ entity InvestigationDatabase2048 {
+ 	databaseValue2048 : string []
+ }
+ 
+ entity InvestigationFileSystem {
+ 	fileValue : file
+ }
+ 
+ entity InvestigationGeolocation {
+ 	locationLong : string
+ 	locationLat : string
+ }

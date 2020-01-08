@@ -1,0 +1,65 @@
+package Investigation.views
+
+/*
+ * Implement the view here
+ */
+
+View AccelerometerView {
+	title "Accelerometer"
+	
+	action "Start" (Create) onClick Accelerometer.getAccelerometerValue
+	
+	defaultProceed action "Done" onClick Accelerometer.done
+	
+	FlowLayoutPane accelerometerWrapper {
+		
+	}
+}
+
+View CameraView {
+	title "Camera"
+	
+	action "Start" (Create) onClick Camera.getCameraValue
+	
+	defaultProceed action "Done" onClick Camera.done
+	
+	FlowLayoutPane cameraWrapper {
+		
+	}
+}
+
+View DatabaseView {
+	title "Database"
+	
+	action "Start" (Create) onClick Database.getDatabaseValue
+	
+	defaultProceed action "Done" onClick Database.done
+	
+	FlowLayoutPane databaserWrapper {
+		
+	}
+}
+
+View FileSystemView {
+	title "File system"
+	
+	action "Start" (Create) onClick FileSystem.getFileSystemValue
+	
+	defaultProceed action "Done" onClick FileSystem.done
+	
+	FlowLayoutPane fileSystemWrapper {
+		
+	}
+}
+
+View GeolocationView {
+	title "Geolocation"
+	
+	action "Start" (Create) onClick Geolocation.getGeolocationValue
+	
+	defaultProceed action "Done" onClick Geolocation.done
+	
+	FlowLayoutPane geolocationWrapper {
+		
+	}
+}

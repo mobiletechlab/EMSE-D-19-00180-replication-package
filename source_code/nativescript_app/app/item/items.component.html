@@ -1,0 +1,13 @@
+<ActionBar title="Feature Performance Benchmark" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <Label class="intro-text" text="NativeScript benchmarks for platform/hardware feature access" textWrap="true"></Label>
+    <ListView [items]="navigationPages" class="list-group">
+        <ng-template let-page="item">
+            <!-- <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                class="list-group-item"></Label> -->
+            <Button class="btn btn-primary btn-active" [text]="page.split('Page')[0]"></Button>
+        </ng-template>
+    </ListView>
+</StackLayout>

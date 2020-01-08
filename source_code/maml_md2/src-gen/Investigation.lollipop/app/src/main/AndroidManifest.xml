@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generated in de.wwu.md2.framework.generator.android.lollipop.misc.AndroidManifest.generateProjectAndroidManifest() -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    package="md2.investigation" >
+
+	<uses-feature android:name="android.hardware.location.gps" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    
+    <application
+        android:name=".EinkaufszettelApp"
+        android:allowBackup="true"
+		android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+		android:theme="@style/Theme.AppCompat.Light" >
+			<activity
+	            android:name=".StartActivity"
+	            android:label="@string/app_name" >
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />			
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	        </activity>
+        <activity
+        	android:name=".AccelerometerViewActivity"
+        	android:label="@string/title_activity_accelerometerView" >
+        </activity>
+        <activity
+        	android:name=".ContactViewActivity"
+        	android:label="@string/title_activity_contactView" >
+        </activity>
+        <activity
+        	android:name=".DatabaseViewActivity"
+        	android:label="@string/title_activity_databaseView" >
+        </activity>
+        <activity
+        	android:name=".FileSystemViewActivity"
+        	android:label="@string/title_activity_fileSystemView" >
+        </activity>
+        <activity
+        	android:name=".GeolocationViewActivity"
+        	android:label="@string/title_activity_geolocationView" >
+        </activity>
+    </application>
+</manifest>

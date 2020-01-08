@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generated in de.wwu.md2.framework.generator.android.lollipop.view.Values.generateIdsXml() -->
+<resources>
+	<item name="startActivity_AccelerometerButton" type="id"/>				
+	<item name="startActivity_ContactButton" type="id"/>
+	<item name="startActivity_DatabaseButton" type="id"/>				
+	<item name="startActivity_FileSystemButton" type="id"/>				
+	<item name="startActivity_GeolocationButton" type="id"/>				
+	<item name="AccelerometerView" type="id"/>
+	<item name="AccelerometerView__wrapperFlowLayout" type="id"/>
+	<item name="CameraView" type="id"/>
+	<item name="CameraView__wrapperFlowLayout" type="id"/>
+	<item name="DatabaseView" type="id"/>
+	<item name="DatabaseView__wrapperFlowLayout" type="id"/>
+	<item name="FileSystemView" type="id"/>
+	<item name="FileSystemView__wrapperFlowLayout" type="id"/>
+	<item name="GeolocationView" type="id"/>
+	<item name="GeolocationView__wrapperFlowLayout" type="id"/>
+	<item name="AccelerometerView_accelerometerWrapper" type="id"/>
+	<item name="spacer633941" type="id"/>
+	<item name="AccelerometerView_446136" type="id"/>
+	<item name="AccelerometerView_259731" type="id"/>
+	<item name="CameraView_cameraWrapper" type="id"/>
+	<item name="spacer476226" type="id"/>
+	<item name="CameraView_991226" type="id"/>
+	<item name="CameraView_634431" type="id"/>
+	<item name="DatabaseView_databaserWrapper" type="id"/>
+	<item name="spacer859271" type="id"/>
+	<item name="DatabaseView_687142" type="id"/>
+	<item name="DatabaseView_727522" type="id"/>
+	<item name="FileSystemView_fileSystemWrapper" type="id"/>
+	<item name="spacer249948" type="id"/>
+	<item name="FileSystemView_160363" type="id"/>
+	<item name="FileSystemView_662844" type="id"/>
+	<item name="GeolocationView_geolocationWrapper" type="id"/>
+	<item name="spacer223147" type="id"/>
+	<item name="GeolocationView_755859" type="id"/>
+	<item name="GeolocationView_893087" type="id"/>
+</resources>

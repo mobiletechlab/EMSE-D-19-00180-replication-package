@@ -1,0 +1,45 @@
+<!-- generated in de.wwu.md2.framework.generator.android.lollipop.view.Values.generateStringsXml() -->
+<resources>
+	<string name="app_name">Investigation</string>
+	<string name="title_activity_accelerometerView">Accelerometer</string>
+	<string name="title_activity_contactView">Contacts</string>
+	<string name="title_activity_databaseView">Database</string>
+	<string name="title_activity_fileSystemView">File system</string>
+	<string name="title_activity_geolocationView">Geolocation</string>
+	
+	<string name="Accelerometer_alias">Accelerometer</string>
+	<string name="Contact_alias">Contacts</string>
+	<string name="Database_alias">Database</string>
+	<string name="FileSystem_alias">FileSystem</string>
+	<string name="Geolocation_alias">Geolocation</string>
+	
+	<string name="AccelerometerView_446136_title">446136</string>
+	<string name="AccelerometerView_446136_text">Start</string>
+	<string name="AccelerometerView_259731_title">259731</string>
+	<string name="AccelerometerView_259731_text">Done</string>
+	<string name="CameraView_991226_title">991226</string>
+	<string name="CameraView_991226_text">Start</string>
+	<string name="CameraView_634431_title">634431</string>
+	<string name="CameraView_634431_text">Done</string>
+	<string name="DatabaseView_687142_title">687142</string>
+	<string name="DatabaseView_687142_text">Start</string>
+	<string name="DatabaseView_727522_title">727522</string>
+	<string name="DatabaseView_727522_text">Done</string>
+	<string name="FileSystemView_160363_title">160363</string>
+	<string name="FileSystemView_160363_text">Start</string>
+	<string name="FileSystemView_662844_title">662844</string>
+	<string name="FileSystemView_662844_text">Done</string>
+	<string name="GeolocationView_755859_title">755859</string>
+	<string name="GeolocationView_755859_text">Start</string>
+	<string name="GeolocationView_893087_title">893087</string>
+	<string name="GeolocationView_893087_text">Done</string>
+
+	<string name="setup_repetitions">Repetitions</string>
+	<string name="setup_description">Please specify test parameters</string>
+	<string name="setup_output_placeholder">Waiting to start...</string>
+	<string name="setup_btnStart">Start benchmark</string>
+	<string name="setup_btnStop">Running .... Push to cancel benchmark</string>
+	<string name="setup_log_start">Benchmark started</string>
+	<string name="setup_log_completed">Benchmark completed</string>
+	<string name="setup_log_userCancel">User cancelled benchmark</string>
+</resources>

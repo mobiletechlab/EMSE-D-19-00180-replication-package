@@ -1,0 +1,134 @@
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=accelerometerValueX
+columnName=investigationAccelerometer_accelerometerValueX
+# --field-end--
+# --field-start--
+fieldName=accelerometerValueY
+columnName=investigationAccelerometer_accelerometerValueY
+# --field-end--
+# --field-start--
+fieldName=accelerometerValueZ
+columnName=investigationAccelerometer_accelerometerValueZ
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=accelerometerValueX
+columnName=investigationCamera_accelerometerValueX
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=databaseValue128
+columnName=investigationDatabase128_databaseValue128
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=databaseValue2048
+columnName=investigationDatabase2048_databaseValue2048
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=fileValue
+columnName=investigationFileSystem_fileValue
+dataPersister=SERIALIZABLE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=locationLong
+columnName=investigationGeolocation_locationLong
+# --field-end--
+# --field-start--
+fieldName=locationLat
+columnName=investigationGeolocation_locationLat
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=returnStep
+columnName=__ReturnStepStack_returnStep
+# --field-end--
+# --field-start--
+fieldName=returnAndReverseStep
+columnName=__ReturnStepStack_returnAndReverseStep
+# --field-end--
+# --field-start--
+fieldName=returnAndProceedStep
+columnName=__ReturnStepStack_returnAndProceedStep
+# --field-end--
+# --field-start--
+fieldName=tail
+columnName=__ReturnStepStack_tail
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=currentProcessChainStep
+columnName=__ProcessChainControllerState_currentProcessChainStep
+# --field-end--
+# --field-start--
+fieldName=lastEventFired
+columnName=__ProcessChainControllerState_lastEventFired
+# --field-end--
+# --table-fields-end--
+# --table-end--

@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="md2.investigation.BenchmarkFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/setupRepetitionsBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:max="@integer/setup_repetitions_max"
+            android:min="@integer/setup_repetitions_min"
+            android:progress="@integer/setup_repetitions_default"
+            app:layout_constraintEnd_toStartOf="@+id/setupRepetitionsValue"
+            app:layout_constraintStart_toEndOf="@+id/setupRepetitionsDesc"
+            app:layout_constraintTop_toBottomOf="@+id/txtSetupDesc" />
+
+        <Button
+            android:id="@+id/benchmarkStartStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/setup_btnStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setupRepetitionsBar" />
+
+        <EditText
+            android:id="@+id/setupRepetitionsValue"
+            style="@android:style/Widget.EditText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/setupRepetitionsValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setupRepetitionsBar"
+            app:layout_constraintTop_toBottomOf="@+id/txtSetupDesc" />
+
+        <TextView
+            android:id="@+id/setupRepetitionsDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/setup_repetitions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSetupDesc" />
+
+        <TextView
+            android:id="@+id/txtSetupDesc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/setup_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/benchmarkOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/setup_output_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/benchmarkStartStop" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+

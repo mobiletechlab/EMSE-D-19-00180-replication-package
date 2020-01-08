@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generated in de.wwu.md2.framework.generator.android.wearable.view.Values.generateViewsXml() -->
+<resources>
+    <string name="StartActivity">md2.investigation.StartActivity</string>
+    <string name="AccelerometerViewActivity">md2.investigation.AccelerometerViewActivity</string>
+    <string name="CameraViewActivity">md2.investigation.CameraViewActivity</string>
+    <string name="DatabaseViewActivity">md2.investigation.DatabaseViewActivity</string>
+    <string name="FileSystemViewActivity">md2.investigation.FileSystemViewActivity</string>
+    <string name="GeolocationViewActivity">md2.investigation.GeolocationViewActivity</string>
+</resources>

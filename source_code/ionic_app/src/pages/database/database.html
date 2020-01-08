@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Database</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block (click)="generateDatasets()">(1) Generate dataset</button>
+  <button ion-button block (click)="setupDatabaseTables()">(2) Setup database</button>
+  <button ion-button block (click)="openDatabase()">(3) Open database</button>
+  <button ion-button block (click)="readDataTask()">(debug) Read Data</button>
+  <hr />
+  <button ion-button full color="danger" (click)="resetDatabase()">Reset database</button>
+  <hr />
+  <p>{{message}}</p>
+  <benchmarker feature="Database" description="IMPORTANT: Use only 1 repetition!! This benchmark will write 128 bytes 5000 times and 2048 bytes 1000 times, then read the data back from SQLite." (onBenchmark)="runTask($event)"></benchmarker>
+</ion-content>

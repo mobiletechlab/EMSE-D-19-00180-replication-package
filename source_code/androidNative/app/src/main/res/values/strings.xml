@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Feature Performance Benchmark</string>
+    <string name="start_intro_text">Native Android benchmarks for platform/hardware feature access</string>
+    <string name="startSection_accelerometer">Accelerometer</string>
+    <string name="startSection_camera">Camera</string>
+    <string name="startSection_contact">Contacts</string>
+    <string name="startSection_database">Database</string>
+    <string name="startSection_fileSystem">File system</string>
+    <string name="startSection_geolocation">Geolocation</string>
+    <string name="accelerometer_title">Accelerometer</string>
+    <string name="accelerometer_description">Fetch the current accelerometer values</string>
+    <string name="camera_title">Camera</string>
+    <string name="camera_description">Description</string>
+    <string name="database_title">Database</string>
+    <string name="database_description">Description</string>
+    <string name="filesystem_title">File system access</string>
+    <string name="filesystem_description">Fetch a base64-encoded image from internal device storage and display in image preview</string>
+    <string name="geolocation_title">Geolocation</string>
+    <string name="geolocation_description">Fetch the current GPS position</string>
+    <string name="contact_title">Contact</string>
+    <string name="contact_description">Write items to the contact list</string>
+    <string name="setup_repetitions">Repetitions</string>
+    <string name="setup_description">Please specify test parameters</string>
+    <string name="setup_output_placeholder">Waiting to start...</string>
+    <string name="setup_btnStart">Start benchmark</string>
+    <string name="setup_btnStop">Running .... Push to cancel benchmark</string>
+    <string name="setup_log_start">Benchmark started</string>
+    <string name="setup_log_completed">Benchmark completed</string>
+    <string name="setup_log_userCancel">User cancelled benchmark</string>
+</resources>

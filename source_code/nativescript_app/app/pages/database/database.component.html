@@ -1,0 +1,14 @@
+<ActionBar title="Database" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <Button class="btn btn-primary btn-active" id="generateDataset" text="(1) Generate dataset" (tap)="generateDatasets($event)"></Button>
+    <Button class="btn btn-primary btn-active" id="openDatabase" text="(2) Open database" (tap)="openDatabase($event)"></Button>
+    <Button class="btn btn-primary btn-active" id="setupDatabase" text="(3) Setup database" (tap)="setupDatabaseTables($event)"></Button>
+    <!-- <Button class="btn btn-primary btn-active" id="readData" text="(debug) Read data" (tap)="readDataTask($event)"></Button> -->
+    <Button class="btn btn-danger btn-active" id="resetData" text="Reset database" (tap)="resetDatabase($event)"></Button>
+
+    <Label text="{{ message }}" textWrap="true"></Label>
+
+    <ns-benchmarker description="Performance testing database" feature="Database" (onBenchmark)="runTask($event)"></ns-benchmarker>
+</StackLayout>

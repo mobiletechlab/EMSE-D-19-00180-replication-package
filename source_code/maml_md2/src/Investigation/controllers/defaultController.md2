@@ -1,0 +1,170 @@
+package Investigation.controllers
+
+/*
+ * Implement the controller here
+ */
+
+main {
+	appVersion "1.0"
+	modelVersion "1.0"
+	workflowManager WorkflowBackendConnection
+}
+
+remoteConnection WorkflowBackendConnection {
+	uri "http://localhost:8080/Investigation.backend/service/"
+}
+
+contentProvider InvestigationAccelerometer AccelerometerProvider {
+	providerType local
+}
+
+contentProvider InvestigationCamera CameraProvider{
+	providerType local
+}
+
+contentProvider InvestigationDatabase128 Database128Provider{
+	providerType local
+}
+
+contentProvider InvestigationDatabase2048 Database2048Provider{
+	providerType local
+}
+
+contentProvider InvestigationFileSystem FileSystemProvider{
+	providerType local
+}
+
+contentProvider InvestigationGeolocation GeolocationProvider{
+	providerType local
+}
+
+WorkflowElement Accelerometer {
+	
+	defaultProcessChain firstProcessChain
+	
+	onInit {
+		init
+	}
+	
+	action CustomAction init {
+	}
+	
+	action CustomAction getAccelerometerValue {
+		call ContentProviderGet ( :AccelerometerProvider )
+	}
+	
+	action CustomAction done {
+		call FireEvent ( AccelerometerDone )
+	}
+	
+	processChain  firstProcessChain {
+		step firstStep:
+			view AccelerometerView
+	}
+}
+
+WorkflowElement Camera {
+	
+	defaultProcessChain firstProcessChain
+	
+	onInit {
+		init
+	}
+	
+	action CustomAction init {
+	}
+	
+	action CustomAction getCameraValue {
+		//call ContentProviderGet ( :AccelerometerProvider )
+	}
+	
+	action CustomAction done {
+		call FireEvent ( CameraDone )
+	}
+	
+	processChain  firstProcessChain {
+		step firstStep:
+			view CameraView
+	}
+}
+
+WorkflowElement Database {
+	
+	defaultProcessChain firstProcessChain
+	
+	onInit {
+		init
+	}
+	
+	action CustomAction init {
+	}
+	
+	action CustomAction getDatabaseValue {
+		call ContentProviderOperation (save :Database128Provider) 
+		call ContentProviderOperation (save :Database2048Provider)
+	}
+	
+	action CustomAction done {
+		call FireEvent ( DatabaseDone )
+	}
+	
+	processChain  firstProcessChain {
+		step firstStep:
+			view DatabaseView
+	}
+}
+
+WorkflowElement FileSystem {
+	
+	defaultProcessChain firstProcessChain
+	
+	onInit {
+		init
+	}
+	
+	action CustomAction init {
+	}
+	
+	action CustomAction getFileSystemValue {
+		call ContentProviderGet ( :FileSystemProvider )
+	}
+	
+	action CustomAction done {
+		call FireEvent ( FileSystemDone )
+	}
+	
+	processChain  firstProcessChain {
+		step firstStep:
+			view FileSystemView
+	}
+}
+
+WorkflowElement Geolocation {
+	
+	defaultProcessChain firstProcessChain
+	
+	onInit {
+		init
+	}
+	
+	action CustomAction init {
+	}
+	
+	action CustomAction getGeolocationValue {
+		set :GeolocationProvider.locationLong = :location.longitude 
+		set :GeolocationProvider.locationLat = :location.latitude
+	}
+	
+	action CustomAction done {
+		call FireEvent ( GeolocationDone )
+	}
+	
+	processChain  firstProcessChain {
+		step firstStep:
+			view GeolocationView
+	}
+}
+
+
+
+

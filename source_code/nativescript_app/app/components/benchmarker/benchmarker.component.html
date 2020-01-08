@@ -1,0 +1,17 @@
+<StackLayout class="page">
+    <Label class="intro-text" [text]="description" textWrap="true"></Label>
+    <Label class="intro-text" text="Please specify test parameters" textWrap="true"></Label>
+
+    <GridLayout class="m-15" rows="auto auto" columns="50 * 50">
+        <Label row="1" col="0" text="Repetitions" textWrap="true" fontSize="15"></Label>
+        <Slider row="1" col="1" value="30" (valueChange)="onSliderChanged($event)" minValue="1" maxValue="50"></Slider>
+        <Label row="1" col="2" [text]="repetitions" textWrap="true" fontSize="15" class="icon"></Label>
+    </GridLayout>
+
+    <Button class="btn btn-primary" text="{{benchmarkRunning ? 'Stop' : 'Start'}} Benchmark" (tap)="onBenchmarkClicked()"></Button>
+    <ListView [items]="outputLog" class="list-group">
+        <ng-template let-log="item">
+            <Label class="intro-text" [text]="log" textWrap="true"></Label>
+        </ng-template>
+    </ListView>
+</StackLayout>

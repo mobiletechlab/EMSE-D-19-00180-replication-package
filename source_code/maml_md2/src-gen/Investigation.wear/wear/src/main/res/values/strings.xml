@@ -1,0 +1,17 @@
+<!-- generated in de.wwu.md2.framework.generator.android.wearable.view.Values.generateStringsXml() -->
+<resources>
+	<string name="app_name">Investigation</string>
+	<string name="title_activity_accelerometerView">AccelerometerView</string>
+	<string name="title_activity_cameraView">CameraView</string>
+	<string name="title_activity_databaseView">DatabaseView</string>
+	<string name="title_activity_fileSystemView">FileSystemView</string>
+	<string name="title_activity_geolocationView">GeolocationView</string>
+
+	<string name="Accelerometer_alias">Accelerometer</string>
+	<string name="Camera_alias">Camera</string>
+	<string name="Database_alias">Database</string>
+	<string name="FileSystem_alias">FileSystem</string>
+	<string name="Geolocation_alias">Geolocation</string>
+
+	
+</resources>

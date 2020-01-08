@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Feature Performance Benchmark
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p style="color: #838383">Ionic benchmarks for platform/hardware feature access</p>
+  <button *ngFor="let page of pages" ion-button block color="md-grey" (click)="goToPage(page)">{{page.split("Page")[0]}}</button>
+</ion-content>

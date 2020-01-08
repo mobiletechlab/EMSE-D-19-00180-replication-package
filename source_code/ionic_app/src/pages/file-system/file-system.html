@@ -1,0 +1,17 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>File System</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <!-- <img [src]="image" /> -->
+
+    <button ion-button block (click)="saveBenchmarkImage()">Save benchmark image (only once)</button>
+    
+    <benchmarker feature="File system access" description="Fetch a base64-encoded image from internal device storage" (onBenchmark)="runTask($event)"></benchmarker>
+  </ion-content>
+  

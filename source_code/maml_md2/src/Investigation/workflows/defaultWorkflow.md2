@@ -1,0 +1,41 @@
+package Investigation.workflows
+
+/*
+ * Implement the workflow here
+ */
+WorkflowElement Accelerometer
+	fires AccelerometerDone {
+		end workflow
+	}
+	
+WorkflowElement Camera
+	fires CameraDone {
+		end workflow
+	}
+	
+WorkflowElement Database
+	fires DatabaseDone {
+		end workflow
+	}
+	
+WorkflowElement FileSystem
+	fires FileSystemDone {
+		end workflow
+	}
+	
+WorkflowElement Geolocation
+	fires GeolocationDone {
+		end workflow
+	}
+
+App EinkaufszettelApp {
+	WorkflowElements {
+		Accelerometer(startable: "Accelerometer"),
+		Camera(startable: "Camera"),
+		Database(startable: "Database"),
+		FileSystem(startable: "FileSystem"),
+		Geolocation(startable: "Geolocation")
+	}
+	appName "Investigation"
+}
+

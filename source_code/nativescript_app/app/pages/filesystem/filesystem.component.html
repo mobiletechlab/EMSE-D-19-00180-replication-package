@@ -1,0 +1,8 @@
+<ActionBar title="Filesystem" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <Button class="btn btn-primary btn-active" id="button" text="Save image to device (only once)" (tap)="saveBenchmarkImageToDevice($event)"></Button>
+    <ns-benchmarker description="Fetch a base64-encoded image from internal device storage" feature="Filesystem"
+        (onBenchmark)="runTask($event)"></ns-benchmarker>
+</StackLayout>

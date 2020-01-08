@@ -1,0 +1,15 @@
+<div>
+  {{description}}
+  <p>Please specify test parameters</p>
+  <ion-range [disabled]="benchmarkRunning" min="1" step="1" start="30" max="50" snaps="true" [(ngModel)]="repetitions" (ionChange)="onSliderChanged($event)">
+    <ion-label range-left class="small-text">Repetitions</ion-label>
+    <ion-input type="number" [(ngModel)]="repetitions" range-right>{{repetitions}}</ion-input>
+  </ion-range>
+  <button ion-button block color="md-grey" (click)="onBenchmarkClicked()">{{benchmarkRunning ? 'Stop' : 'Start'}} Benchmark</button>
+
+  <ion-list>
+    <ion-item no-lines text-wrap *ngFor="let log of outputLog">
+      <p style="color: #838383">{{log}}</p>
+    </ion-item>
+  </ion-list>
+</div>
